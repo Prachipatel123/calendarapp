@@ -1,0 +1,151 @@
+body{
+  background-image: linear-gradient(to right,
+    #317aa4, #437ea7, #5281a9, #5f85ab,
+    #6b89ad, #6c88b0, #6e87b3, #7186b5,
+    #707eb8, #7276b9, #776db9, #7f62b6);
+}
+
+.heading{
+  background-color: #f5c0c0;
+  display: block;
+  margin-left: 450px;
+  margin-right: 450px;
+  margin-top: 25px;
+  border-radius: 40px 1px;
+  border-width: medium;
+  border-style: dashed;
+  border-color: white;
+}
+
+.heading-text{
+  color: black;
+  text-align: center;
+}
+
+.sub-heading{
+  background-color: #f5c0c0;
+  display: block;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 450px;
+  margin-right: 450px;
+  border-width: thin;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+}
+
+
+p{
+  background-color: #5f85ab;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  border-width: thin;
+  border-style: solid;
+  border-color: white;
+  width: 80%;
+}
+
+.line{
+  display: inline-block;
+
+}
+
+
+.button{
+  background-color: #7f62b6;
+  padding: 6px;
+  border-width: thin;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  position: relative;
+  left: 205px;
+  top: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: white;
+}
+
+.delete-button{
+  background-color: red;
+  padding: 6px;
+  border-width: thin;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  position: relative;
+  left: 0px;
+  top: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: white;
+}
+
+.button:hover {
+  background-color: #9b3675;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+.submit-box{
+  background-color: #9b3675;
+  border-width: thin;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+  position: relative;
+  top: 35px;
+  left: 25px;
+  padding: 5px;
+}
+
+
+input[type=text]:focus{
+  border-color: white;
+  border-width: thin;
+  border-style: solid;
+  color: white;
+  background-color:#317aa4;
+  outline:none !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+h1{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 46px;
+  color: white;
+  padding-bottom: 5px;
+}
+
+h2{
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.message{
+  font-family: 'Comfortaa', cursive;
+  font-size: 12px;
+  color: #435560;
+}
+
+footer{
+  background-color: #435560;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  font-size: 10px;
+  padding: 10px;
+  width: 20%;
+  text-align: center;
+  position: fixed;
+  right:0px;
+  bottom: 0px;
+
+}

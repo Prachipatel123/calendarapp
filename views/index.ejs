@@ -1,0 +1,61 @@
+<%- include("header"); -%>
+
+<!-- Understanding Scriplets
+    <% if(day == "Sunday"){ %>
+      <h1 style="color:blue">Today's List </h1>
+      <h2 style="color:blue">Today is <%= day %></h2>
+      <h2 style="color:blue"><%= msg %></h2>
+    <% } else { %>
+      <h1>Today's List</h1>
+      <h2>Today is <%= day %></h2>
+      <h2><%= msg %></h2>
+    <% } %>
+  -->
+<!--
+  <% switch(day) {  case "Sunday": %>
+    <h1 style="color:blue">Today's List </h1>
+    <h2 style="color:blue">Today is <%= day %></h2>
+    <h2 style="color:blue"><%= msg %></h2>
+    <% break; case "Monday": %>
+    <h1 style="color:orange">Today's List </h1>
+    <h2 style="color:orange">Today is <%= day %></h2>
+    <h2 style="color:orange"><%= msg %></h2>
+    <% break; } %>
+  -->
+
+<div class="heading">
+  <div class="heading-text">
+    <h1>Today's <%= listType %> List </h1>
+    <h2>Today is <%= day %></h2>
+    <h2 class="message"><%= msg %></h2>
+  </div>
+</div>
+
+
+<div class="sub-heading">
+  <% for (var i = 0; i < items.length; i++){ %>
+  <div class="">
+
+    <p><%= items[i].name %></p>
+    <form class="line" action="/delete" method="post">
+      <input type="hidden" name="listname" value=<%= listType %>>
+      <button value=<%= items[i]._id %> type="submit" name="button" class="delete-button">-</button>
+    </form>
+  </div>
+  <% } %>
+
+  <form class="" action="/" method="post">
+    <div>
+      <input type="text" name="listitem" value="" placeholder="todo item" class="submit-box">
+    </div>
+
+    <div>
+      <button value=<%= listType %> type="submit" name="button" class="button">+</button>
+    </div>
+
+  </form>
+
+
+</div>
+
+<%- include("footer"); -%>
